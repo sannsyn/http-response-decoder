@@ -23,10 +23,6 @@ import Control.Monad.Trans.Writer.Strict as Exports (Writer, runWriter, execWrit
 -------------------------
 import Data.Profunctor.Unsafe as Exports
 
--- success
--------------------------
-import Success.Pure as Exports (Success)
-
 -- bytestring
 -------------------------
 import Data.ByteString as Exports (ByteString)

@@ -1,7 +1,7 @@
 name:
   http-response-decoder
 version:
-  0.1
+  0.2
 homepage:
   https://github.com/nikita-volkov/http-response-decoder
 bug-reports:
@@ -52,7 +52,7 @@ library
     unordered-containers >= 0.2.6 && < 0.3,
     case-insensitive >= 1.2 && < 2,
     -- general:
-    success >= 0.2.6 && < 0.3,
+    matcher >= 0.1 && < 0.2,
     profunctors >= 5.2 && < 6,
     transformers >= 0.3 && < 0.6,
     base-prelude < 2
