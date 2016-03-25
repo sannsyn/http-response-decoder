@@ -6,13 +6,13 @@ import qualified ByteString.TreeBuilder
 import qualified Data.ByteString
 
 
-{-# INLINABLE bytes #-}
+{-# INLINE bytes #-}
 bytes :: IO ByteString -> IO ByteString
 bytes =
   fmap ByteString.TreeBuilder.toByteString .
   builder
 
-{-# INLINE builder #-}
+{-# INLINABLE builder #-}
 builder :: IO ByteString -> IO ByteString.TreeBuilder.Builder
 builder chunk =
   loop mempty
