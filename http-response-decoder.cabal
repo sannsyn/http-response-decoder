@@ -1,7 +1,7 @@
 name:
   http-response-decoder
 version:
-  0.2
+  0.2.1
 homepage:
   https://github.com/nikita-volkov/http-response-decoder
 bug-reports:
