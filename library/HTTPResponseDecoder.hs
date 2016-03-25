@@ -19,6 +19,7 @@ module HTTPResponseDecoder
   Body,
   bodyStream,
   bodyBytes,
+  bodyLazyBytes,
   -- * Matcher
   Matcher.Matcher,
   Matcher.equals,
@@ -30,6 +31,7 @@ where
 import HTTPResponseDecoder.Prelude
 import qualified Network.HTTP.Client
 import qualified Network.HTTP.Types
+import qualified Data.ByteString.Lazy
 import qualified Data.HashMap.Strict
 import qualified Data.CaseInsensitive
 import qualified HTTPResponseDecoder.BodyReaders
@@ -177,4 +179,10 @@ bodyBytes matcher =
   Body $
   fmap (Matcher.run matcher) .
   HTTPResponseDecoder.BodyReaders.bytes
+
+bodyLazyBytes :: Matcher.Matcher Data.ByteString.Lazy.ByteString a -> Body a
+bodyLazyBytes matcher =
+  Body $
+  fmap (Matcher.run matcher) .
+  HTTPResponseDecoder.BodyReaders.lazyBytes
 
