@@ -1,11 +1,13 @@
 name:
   http-response-decoder
 version:
-  0.2.1
+  0.2.1.1
+synopsis:
+  Declarative DSL for parsing an HTTP response
 homepage:
-  https://github.com/nikita-volkov/http-response-decoder
+  https://github.com/sannsyn/http-response-decoder
 bug-reports:
-  https://github.com/nikita-volkov/http-response-decoder/issues
+  https://github.com/sannsyn/http-response-decoder/issues
 author:
   Nikita Volkov <nikita.y.volkov@mail.ru>
 maintainer:
@@ -26,7 +28,7 @@ source-repository head
   type:
     git
   location:
-    git://github.com/nikita-volkov/http-response-decoder.git
+    git://github.com/sannsyn/http-response-decoder.git
 
 
 library
