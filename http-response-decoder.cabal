@@ -1,7 +1,7 @@
 name:
   http-response-decoder
 version:
-  0.2.2
+  0.2.3
 synopsis:
   Declarative DSL for parsing an HTTP response
 homepage:
@@ -46,7 +46,7 @@ library
   build-depends:
     -- http:
     http-types >= 0.9 && < 0.10,
-    http-client >= 0.4.27 && < 0.5,
+    http-client >= 0.4.27 && < 0.6,
     -- data:
     bytestring-tree-builder >= 0.2.5 && < 0.3,
     bytestring >= 0.10 && < 0.11,
